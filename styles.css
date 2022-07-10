@@ -10,7 +10,7 @@ body {
 }
 main {
   width: 1440px;
-  height: 800px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,8 +19,8 @@ main {
   gap: 20px;
 }
 .container {
-  width: 1440px;
-  height: 600px;
+  width: 900px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,10 +29,11 @@ main {
 .card {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  height: 600px;
+  width: 300px;
+  height: 450px;
   align-items: flex-start;
-  padding: 50px;
+  padding: 50px 50px 50px 30px;
+
 }
 
 .container .card:nth-child(1) {
@@ -48,13 +49,13 @@ main {
 }
 
 .card img {
-  width: 80px;
-  height: 50px;
+  width: 50px;
+  height: 30px;
 }
 
 .card h1 {
   padding: 30px 0 20px 0;
-  font-size: 50px;
+  font-size: 30px;
   color: hsl(0, 0%, 95%);
   font-family: 'Big Shoulders Display', cursive;
   text-transform: uppercase;
@@ -64,13 +65,14 @@ main {
 }
 
 .card p {
+  width: 245px;
   font-size: 15px;
   color: hsla(0, 0%, 100%, 0.75);
   font-family: 'Lexend Deca', sans-serif;
-  font-weight: normal;
-  letter-spacing: 1.8px;
-  padding-right: 36px;
-  line-height: 28px;
+  font-weight:lighter;
+  letter-spacing: 1.2px;
+  line-height: 22px;
+
 }
 
 .card button {
@@ -79,7 +81,7 @@ main {
   width: 150px;
   border-radius: 25px;
   border: 1px solid;
-  margin-top: 125px;
+  margin-top: 80px;
   font-size: 15px;
   font-weight: bold;
 }
@@ -131,9 +133,19 @@ main {
     display: flex;
     flex-direction: column;
     width: 375px;
-    height: 500px;
+    height: 400px;
     align-items: flex-start;
     padding: 50px;
+  }
+
+  .card p {
+    width: 270px;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight:lighter;
+    letter-spacing: 1.2px;
+    line-height: 22px;
   }
 
   .card button {
