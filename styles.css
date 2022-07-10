@@ -10,7 +10,7 @@ body {
 }
 main {
   width: 1440px;
-  height: 500px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +24,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 
 .card {
@@ -103,6 +104,14 @@ main {
   color: #fff;
   border: 2px solid hsl(0, 0%, 95%);
   cursor: pointer;
+}
+
+.attribution { font-size: 11px;
+  text-align: center;
+  padding-top: 20px;
+ }
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 
