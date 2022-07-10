@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif;
+}
+main {
+  width: 1440px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 20px;
+}
+.container {
+  width: 1440px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+  align-items: flex-start;
+  padding: 50px;
+}
+
+.container .card:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.container .card:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.container .card:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card img {
+  width: 80px;
+  height: 50px;
+}
+
+.card h1 {
+  padding: 30px 0 20px 0;
+  font-size: 50px;
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+
+}
+
+.card p {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1.8px;
+  padding-right: 36px;
+  line-height: 28px;
+}
+
+.card button {
+  background-color: hsl(0, 0%, 95%);
+  padding: 15px;
+  width: 150px;
+  border-radius: 25px;
+  border: 1px solid;
+  margin-top: 125px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.card-one button {
+  color: hsl(31, 77%, 52%);
+}
+
+.card-two button {
+  color: hsl(184, 100%, 22%);
+}
+
+.card-three button {
+  color: hsl(179, 100%, 13%);
+}
+
+.card button:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  main {
+    width: 375px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+  }
+
+  .container {
+    width: 375px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 500px;
+    align-items: flex-start;
+    padding: 50px;
+  }
+
+  .card button {
+    margin-top: 20px;
+  }
+}
